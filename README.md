@@ -8,7 +8,13 @@ Supports **Linux**, **macOS**, and **Windows**.
 
 ### As a Claude Code plugin
 
-Install from the [my-claude-plugins](https://github.com/dkmaker/my-claude-plugins) marketplace:
+First, add the plugin marketplace (one-time setup):
+
+```
+/plugin install-marketplace https://github.com/dkmaker/my-claude-plugins
+```
+
+Then install the plugin:
 
 ```
 /plugin install my-claude-plugins/claude-speak
