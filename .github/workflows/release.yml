@@ -16,9 +16,6 @@ jobs:
           - os: ubuntu-latest
             goos: linux
             goarch: amd64
-          - os: macos-13
-            goos: darwin
-            goarch: amd64
           - os: macos-latest
             goos: darwin
             goarch: arm64
@@ -31,6 +28,10 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: '1.24'
+
+      - name: Install ALSA dev libraries (Linux)
+        if: matrix.goos == 'linux'
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev
 
       - name: Extract version from tag
         id: version
