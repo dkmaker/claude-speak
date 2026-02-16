@@ -67,7 +67,7 @@ On Windows, set it via System Environment Variables or PowerShell:
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `ELEVENLABS_VOICE_ID` | `21m00Tcm4TlvDq8ikWAM` (Rachel) | Voice to use. Browse voices at [elevenlabs.io/voices](https://elevenlabs.io/voices). |
+| `ELEVENLABS_VOICE_ID` | `21m00Tcm4TlvDq8ikWAM` (Rachel) | Voice to use. Browse voices at [elevenlabs.io/voice-library](https://elevenlabs.io/voice-library). |
 | `ELEVENLABS_MODEL` | `eleven_flash_v2_5` | TTS model. Flash is fastest; use `eleven_multilingual_v2` for non-English. |
 
 ## Usage
